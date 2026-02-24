@@ -1,0 +1,86 @@
+/* تنسيق عام للصفحة */
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 50px;
+}
+
+/* عنوان الموقع */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+/* حاوية الدماغ */
+.brain-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* أيقونة الدماغ */
+.brain {
+  font-size: 120px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+/* زر "الانتباه" */
+.brain-node {
+  background: #2c7be5;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* تأثير عند تمرير الماوس على الزر */
+.brain-node:hover {
+  background: #1a5bb8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* تنسيق القائمة المنبثقة */
+.menu {
+  display: none; /* مخفية حتى نضغط على الزر */
+  margin-top: 20px;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #e1e8ed;
+}
+
+/* تنسيق عناصر القائمة */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+  color: #444;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li:hover {
+  background: #f8fbff;
+  color: #2c7be5;
+  border-radius: 8px;
+}
